@@ -23,14 +23,14 @@ body {
 }
 
 .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: #249CEC;
+    border-color: #249CEC;
     color: #fff;
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
+    background-color: #249CEC;
+    border-color: #249CEC;
 }
 
 .btn-danger {
@@ -56,17 +56,17 @@ body {
 }
 
 .btn-outline-primary {
-    color: #007bff;
-    border-color: #007bff;
+    color: #249CEC;
+    border-color: #249CEC;
 }
 
 .btn-outline-primary:hover {
-    background-color: #007bff;
+    background-color: #249CEC;
     color: #fff;
 }
 
 .rating-card {
-    background-color: #007bff !important;
+    background-color: #249CEC !important;
 }
 
 .rating-card h5,
@@ -139,7 +139,7 @@ footer a:hover {
 }
 
 .feature-icons i {
-    color: #007bff;
+    color: #249CEC;
 }
 
 .room-type-section .fa-play-circle.text-warning {

@@ -1,0 +1,45 @@
+.header {
+    background-color: #249CEC;
+    margin-bottom: 10px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+}
+
+.header .logo {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.header .logo span {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.header .auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.header .auth-button {
+    background: white;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: #249CEC;
+    font-weight: bold;
+    color: 16px;
+}
