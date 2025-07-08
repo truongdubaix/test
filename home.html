@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="./css/Home.css"> -->
     <link rel="stylesheet" href="./css/Home.css">
 </head>
 
 <body>
-    <div class="header">
+    <!-- <div class="header">
+        
         <div class="container">
             <div class="inner-wrap">
                 <a href="#" class="logo">BookingRooms</a>
@@ -35,11 +37,227 @@
                         </select>
                     </div>
                     <div class="form-row">
-                        <input type="date">
-                        <input type="date">
+                        <input type="date" placeholder="Ngày đến">
+                        <input type="date" placeholder="Ngày đo">
                         <button class="btn-search">Tìm kiếm</button>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
 
+    <div class="wrapper">
+        <main>
+            <div class="header">
+                <div class="container">
+                    <a href="#" class="logo">
+                        <img src="./imgs/homes/logo.svg" alt="logo">
+                        <span>BookingRoms</span>
+                    </a>
+                    <div class="auth-buttons">
+                        <button class="auth-button">Đăng Nhập</button>
+                        <button class="auth-button">Tạo tài khoản</button>
+                    </div>
+                </div>
+            </div>
+            <div class="search-section">
+                <div class="container">
+                    <div class="search-form-wrap">
+                        <h2 class="search-title">Bạn muốn đi đâu?</h2>
+                        <div class="search-form">
+                            <div class="form-row-top">
+                                <input type="text" class="form-input" placeholder="Bạn muốn đến đâu">
+                                <div class="form-guests">
+                                    <label for="guests-input">Số người:</label>
+                                    <input list="guests" id="guests-input" name="guest" class="form-input">
+                                    <datalist id="guests">
+                                        <option value="1 người lớn"></option>
+                                        <option value="2 người lớn"></option>
+                                        <option value="2 người lớn, 1 người nhỏ"></option>
+                                        <option value="2 người lớn, 2 người nhỏ"></option>
+                                    </datalist>
+                                </div>
+                            </div>
+                            <div class="form-row-bottom">
+                                <input type="date" class="form-input" placeholder="Ngày đến">
+                                <input type="date" class="form-input" placeholder="Ngày đi">
+                                <button class="form-button">Tìm kiếm</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <!-- Sidebar -->
+            <div class="col-md-3">
+                <div class="search-sidebar">
+                    <h3>Bộ lọc</h3>
+                    <div class="price-filter">
+                        <label>Khoảng giá</label>
+                        <div class="price-inputs">
+                            <input type="text" placeholder="100,000" value="100,000">
+                            <span>VND</span>
+                            <span>-</span>
+                            <input type="text" placeholder="1,000,000" value="1,000,000">
+                            <span>VND</span>
+                        </div>
+                        <button class="search-btn">Tìm kiếm</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Content -->
+            <div class="col-md-9">
+                <div class="main-content">
+                    <div class="search-header">
+                        <h1 class="search-title">Đà Nẵng: Tìm thấy 30 chỗ nghỉ</h1>
+                        <div class="sort-dropdown">
+                            <button class="sort-btn">
+                                Sắp xếp
+                                <span>▼</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Hotel Cards -->
+                    <div class="hotel-card">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?w=400&h=300&fit=crop" alt="Hotel Novotel" class="hotel-image">
+                        <div class="hotel-info">
+                            <h3 class="hotel-name">Hotel Novotel</h3>
+                            <p class="hotel-location">Đà Nẵng Trung tâm thành phố</p>
+                            <div class="hotel-rating">
+                                <div class="stars">★★★★★</div>
+                                <span class="rating-text">(23 Đánh giá)</span>
+                            </div>
+                            <div class="room-type">Phòng Deluxe</div>
+                            <div class="room-details">
+                                1 Giường đôi<br>
+                                1 Giường đơn<br>
+                                <span class="free-cancellation">Miễn phí hủy</span>
+                            </div>
+                        </div>
+                        <div class="hotel-price">
+                            <div class="price-amount">VND 4,000,000</div>
+                            <div class="price-note">Đã bao gồm thuế và phí</div>
+                            <button class="view-details-btn">Xem chi tiết</button>
+                        </div>
+                    </div>
+
+                    <div class="hotel-card">
+                        <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=400&h=300&fit=crop" alt="Hotel Novotel" class="hotel-image">
+                        <div class="hotel-info">
+                            <h3 class="hotel-name">Hotel Novotel</h3>
+                            <p class="hotel-location">Đà Nẵng Trung tâm thành phố</p>
+                            <div class="hotel-rating">
+                                <div class="stars">★★★★★</div>
+                                <span class="rating-text">(23 Đánh giá)</span>
+                            </div>
+                            <div class="room-type">Phòng Deluxe</div>
+                            <div class="room-details">
+                                1 Giường đôi<br>
+                                1 Giường đơn<br>
+                                <span class="free-cancellation">Miễn phí hủy</span>
+                            </div>
+                        </div>
+                        <div class="hotel-price">
+                            <div class="price-amount">VND 4,000,000</div>
+                            <div class="price-note">Đã bao gồm thuế và phí</div>
+                            <button class="view-details-btn">Xem chi tiết</button>
+                        </div>
+                    </div>
+
+                    <div class="hotel-card">
+                        <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?w=400&h=300&fit=crop" alt="Hotel Novotel" class="hotel-image">
+                        <div class="hotel-info">
+                            <h3 class="hotel-name">Hotel Novotel</h3>
+                            <p class="hotel-location">Đà Nẵng Trung tâm thành phố</p>
+                            <div class="hotel-rating">
+                                <div class="stars">★★★★★</div>
+                                <span class="rating-text">(23 Đánh giá)</span>
+                            </div>
+                            <div class="room-type">Phòng Deluxe</div>
+                            <div class="room-details">
+                                1 Giường đôi<br>
+                                1 Giường đơn<br>
+                                <span class="free-cancellation">Miễn phí hủy</span>
+                            </div>
+                        </div>
+                        <div class="hotel-price">
+                            <div class="price-amount">VND 4,000,000</div>
+                            <div class="price-note">Đã bao gồm thuế và phí</div>
+                            <button class="view-details-btn">Xem chi tiết</button>
+                        </div>
+                    </div>
+
+                    <div class="hotel-card">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=400&h=300&fit=crop" alt="Hotel Novotel" class="hotel-image">
+                        <div class="hotel-info">
+                            <h3 class="hotel-name">Hotel Novotel</h3>
+                            <p class="hotel-location">Đà Nẵng Trung tâm thành phố</p>
+                            <div class="hotel-rating">
+                                <div class="stars">★★★★★</div>
+                                <span class="rating-text">(23 Đánh giá)</span>
+                            </div>
+                            <div class="room-type">Phòng Deluxe</div>
+                            <div class="room-details">
+                                1 Giường đôi<br>
+                                1 Giường đơn<br>
+                                <span class="free-cancellation">Miễn phí hủy</span>
+                            </div>
+                        </div>
+                        <div class="hotel-price">
+                            <div class="price-amount">VND 4,000,000</div>
+                            <div class="price-note">Đã bao gồm thuế và phí</div>
+                            <button class="view-details-btn">Xem chi tiết</button>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <button class="pagination-btn disabled"><<</button>
+                        <button class="pagination-btn active">1</button>
+                        <button class="pagination-btn">2</button>
+                        <button class="pagination-btn">3</button>
+                        <button class="pagination-btn">4</button>
+                        <button class="pagination-btn">5</button>
+                        <button class="pagination-btn">>></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer-section">
+        <div class="container">
+            <div class="footer-column">
+                <h3 class="footer-title">BookingRoms</h3>
+                <p class="footer-info">Email: <a href="#">support@bookingrooms.vn</a></p>
+                <p class="footer-info">Hotline: <a href="#">0123 456 789</a></p>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-title">Liên kết</h3>
+                <p class="footer-link"><a href="#">Về chúng tôi</a></p>
+                <p class="footer-link"><a href="#">Điều khoản dịch vụ</a></p>
+            </div>
+            <div class="footer-column">
+                <h3 class="footer-title">Theo dõi chúng tôi</h3>
+                <div class="footer-socials">
+                    <a href="#" class="footer-social-icon" aria-label="Facebook">
+                        <img src="./imgs/homes/facebook-icon.svg" alt="Facebook" />
+                    </a>
+                    <a href="#" class="footer-social-icon" aria-label="Instagram">
+                        <img src="./imgs/homes/instagram-icon.svg" alt="Instagram" />
+                    </a>
+                    <a href="#" class="footer-social-icon" aria-label="TikTok">
+                        <img src="./imgs/homes/tiktok-icon.svg" alt="TikTok" />
+                    </a>
                 </div>
             </div>
         </div>
