@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Đánh giá khách sạn</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6); /* lớp tối mờ để nổi nội dung */
+      z-index: 0;
+    }
+
+    .review-section {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+      margin: 50px auto;
+      background: #ffffffdd;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    .review-section h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #3e2723;
+    }
+
+    .rating-stars {
+      text-align: center;
+      font-size: 26px;
+      color: #ccc;
+      margin-bottom: 15px;
+    }
+
+    .rating-stars span:hover,
+    .rating-stars span:hover ~ span,
+    .rating-stars input:checked ~ span {
+      color: #ffc107;
+      cursor: pointer;
+    }
+
+    .comment-box textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      resize: vertical;
+      min-height: 100px;
+      font-size: 14px;
+    }
+
+    .submit-btn {
+      display: block;
+      margin: 20px auto 0;
+      padding: 12px 30px;
+      background-color: #a67c52;
+      color: #fff;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background-color: #8c6239;
+    }
+
+    .review-list {
+      margin-top: 40px;
+    }
+
+    .review-item {
+      border-top: 1px solid #ddd;
+      padding: 15px 0;
+    }
+
+    .review-item h4 {
+      margin: 0 0 5px;
+      color: #333;
+    }
+
+    .review-item .stars {
+      color: #ffc107;
+    }
+
+    .review-item p {
+      margin: 5px 0;
+    }
+
+    .review-item .reply {
+      margin-top: 8px;
+      padding-left: 20px;
+      border-left: 2px solid #ccc;
+      font-style: italic;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay"></div>
+
+  <div class="review-section">
+    <h2>Đánh giá khách sạn</h2>
+
+    <!-- Đánh giá sao -->
+    <div class="rating-stars">
+      ★★★★★
+    </div>
+
+    <!-- Bình luận -->
+    <div class="comment-box">
+      <textarea placeholder="Nhập đánh giá của bạn tại đây..."></textarea>
+    </div>
+
+    <!-- Gửi -->
+    <button class="submit-btn">Gửi đánh giá</button>
+
+    <!-- Danh sách -->
+    <div class="review-list">
+      <div class="review-item">
+        <h4>Nguyễn Văn A</h4>
+        <div class="stars">★★★★★</div>
+        <p>Phòng sạch, view đẹp. Rất hài lòng!</p>
+        <div class="reply">Quản lý: Cảm ơn quý khách đã đánh giá. Hẹn gặp lại!</div>
+      </div>
+
+      <div class="review-item">
+        <h4>Trần Thị B</h4>
+        <div class="stars">★★★☆☆</div>
+        <p>Nhân viên nhiệt tình nhưng wifi yếu.</p>
+        <div class="reply">Quản lý: Cảm ơn góp ý, chúng tôi sẽ cải thiện dịch vụ wifi.</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
