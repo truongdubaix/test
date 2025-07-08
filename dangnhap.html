@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng Nhập Quản Lý Khách Sạn</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: url('https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.65);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+
+        .form-container {
+            position: relative;
+            z-index: 1;
+            max-width: 420px;
+            margin: 100px auto;
+            background: #ffffffee;
+            padding: 35px 40px;
+            border-radius: 12px;
+            box-shadow: 0 0 18px rgba(0,0,0,0.3);
+        }
+
+        h2 {
+            text-align: center;
+            color: #5a3d2b;
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #a67c52;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #8c6239;
+        }
+
+        .note {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 15px;
+            color: #555;
+        }
+
+        .note a {
+            color: #a87335;
+            text-decoration: none;
+        }
+
+        .note a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+
+    <div class="form-container">
+        <h2>Đăng Nhập Hệ Thống</h2>
+        <form action="login.php" method="post">
+            <div class="form-group">
+                <label for="username">Tên đăng nhập / Email</label>
+                <input type="text" id="username" name="username" placeholder="tennguoidung" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Mật khẩu</label>
+                <input type="password" id="password" name="password" placeholder="********" required>
+            </div>
+            <button type="submit">Đăng nhập</button>
+            <p class="note">
+                Chưa có tài khoản? <a href="#">Đăng ký</a><br>
+                <a href="#">Quên mật khẩu?</a>
+            </p>
+        </form>
+    </div>
+</body>
+</html>
